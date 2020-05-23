@@ -131,7 +131,42 @@ public class TextUtil {
     public static int parseVolume(char s) {
         if (s > 'r' || s < 'a')
             return Values.MAX_VELOCITY;
-        return (int) ((s - (double) 'a') / ('q' - 'a') * Values.MAX_VELOCITY);
+        else if (s == 'a')
+        	return 12;
+        else if (s == 'b')
+        	return 25;
+        else if (s == 'c')
+        	return 38;
+        else if (s == 'd')
+        	return 38;
+        else if (s == 'e')
+        	return 50;
+        else if (s == 'f')
+        	return 50;
+        else if (s == 'g')
+        	return 63;
+        else if (s == 'h')
+        	return 63;
+        else if (s == 'i')
+        	return 76;
+        else if (s == 'j')
+        	return 88;
+        else if (s == 'k')
+        	return 88;
+        else if (s == 'l')
+        	return 101;
+        else if (s == 'm')
+        	return 101;
+        else if (s == 'n')
+        	return 114;
+        else if (s == 'o')
+        	return 114;
+        else if (s == 'p')
+        	return 127;
+        else if (s == 'q')
+        	return 127;
+        //return (int) ((s - (double) 'a') / ('q' - 'a') * Values.MAX_VELOCITY);
+		return s;
     }
 
     /**
@@ -140,7 +175,7 @@ public class TextUtil {
      * @return The position on the staff that an MPC note is located.
      */
     public static int parsePosition(char s) {
-        return Values.NOTES_IN_A_LINE - (s - 'a') - 2;
+        return Values.NOTES_IN_A_LINE - (s - 'a') - 8;
     }
 
     /**
