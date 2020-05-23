@@ -20,3 +20,7 @@ messed up.
 if moved from a directory) - need to edit code to address absolute vs relative
 paths.
 [FIXED, v1.0.0]
+
+-Each group of 15 consecutive instruments can only play a maximum of 32 notes at
+a time, assuming default soundfont is used (synthesizer polyphony limit). Other 
+soundfonts may go up to 64.
