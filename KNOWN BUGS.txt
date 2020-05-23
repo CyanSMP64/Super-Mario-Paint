@@ -11,6 +11,7 @@ may have to be sorted out over time and many iterations.
 
 -Christeriousninja / VolcanBrimstone: The soundfont is missing a number of 
 notes in the boat instrument. Some boat notes will not sound because of that.
+[FIXED, v1.3.0]
 
 -Axelrod777: Cannot use the Mochi soundfont - sound effects are currently 
 messed up.
